@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Montez&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: none;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: rgba(150, 150, 150, .7);
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+h1 {
+    font-family: 'Montez', 'sans-serif';
+    font-size: 5rem;
+    text-shadow: 3px 3px 3px rgba(255, 59, 201, .7);
+    z-index: 100;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor-flex {
+    display: flex;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.contenedor-grid {
+    display: grid;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    background-color: #cfcfcf;
+}
+
+header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 80px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.3s ease;
+    z-index: 500;
+}
+
+.scroll-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #0f0f0f;
+    border-radius: 0 0 5px 10px;
+    box-shadow: 0px 3px 10px #dfdfdf;
+}
+
+a.logo {
+    position: fixed;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, 0);
+    font-family: 'Montez', 'sans-serif';
+    text-decoration: none;
+    font-size: 5rem;
+    color: black;
+    text-shadow: 3px 3px 5px rgba(255, 59, 201, 1);
+    transition: all .3s ease-out;
+}
+
+a.scroll-logo {
+    font-size: 3rem;
+    left: 0;
+    top: 0;
+    color: white;
+    transform: translate(0, 0);
+    text-shadow: 5px 5px 5px rgba(255, 59, 201, 1);
+}
+
+a.no-scroll:hover {
+    font-size: 5.2rem;
+}
+
+a.scroll-logo:hover {
+    font-size: 3.2rem;
+}
+
+span.menu-boton {
+    position: fixed;
+    right: 20px;
+    font-family: 'Gochi Hand', 'sans-serif';
+    font-size: 1.1rem;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    text-align: center;
+    line-height: 2.7rem;
+    border-radius: 30%;
+    text-shadow: 3px 3px 3px rgba(255, 59, 201, .7);
+    user-select: none;
+    cursor: pointer;
+}
+
+span.menu-boton {
+    transition: all .5s ease;
+}
+
+span.menu-click {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 3px 3px 100px rgba(255, 59, 201, .5);
+}
+
+span.menu-boton:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 3px 3px 100px rgba(255, 59, 201, .5);
+}
+
+span.scroll-menu-boton {
+    width: 50px;
+    height: 50px;
+    line-height: 2.7rem;
+    padding: 2px;
+    color: white;
+}
+
+span.scroll-menu-boton:hover {
+    border: 2px solid white;
+    box-shadow: none;
+}
+
+ul.menu {
+    position: fixed;
+    list-style: none;
+    top: 90px;
+    right: 20px;
+    transform: translateX(200px);
+    background-color: #dfdfdf;
+    transition: all .5s ease;
+    border-radius: 15px;
+}
+
+ul.scroll-menu {
+    top: 85px;
+    right: 0;
+    border-radius: 15px 0 0 15px;
+    box-shadow: none;
+}
+
+ul.mostrar-menu {
+    transition: all .5s;
+    transform: translateX(0);
+    box-shadow: 3px 3px 100px rgba(255, 59, 201, .3);
+}
+
+ul.menu li {
+    font-family: 'Gochi Hand', 'sans-serif';
+    font-size: 1.3rem;
+    padding: 20px 30px;
+    color: rgba(0, 0, 0, .6);
+    transition: all .3s ease;
+}
+
+ul.menu li:first-child {
+    border-radius: 15px 15px 0 0;
+}
+
+ul.menu li:last-child {
+    border-radius: 0 0 15px 15px;
+}
+
+ul.menu li:hover {
+    font-family: 'Gochi Hand', 'sans-serif';
+    color: rgba(0, 0, 0, 1);
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+ul.menu li:first-child {
+    border-radius: 15px 15px 0 0;
+}
+
+ul.menu li:last-child:hover {
+    border-radius: 0 0 15px 15px;
+}
+
+ul.menu li.scroll-li {
+    transition: all 0.3s;
+}
+
+ul.menu li.scroll-li:first-child {
+    border-radius: 15px 0 0 0;
+}
+
+ul.menu li.scroll-li:last-child {
+    border-radius: 0 0 0 15px;
+}
+
+section {
+    border-radius: 10px;
+}
+
+section.banner {
+    width: 100%;
+    height: 100%;
+}
+
+img.img-banner {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 20% 20%;
+}
+
+section.seccion01 {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: calc(100% - 60px);
+    color: white;
+    background-color: #0f0f0f;
+}
+
+div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.seccion01 p {
+    font-family: 'Gochi Hand', 'sans-serif';
+    font-size: 2rem;
+    text-align: center;
+    min-width: 400px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+section.seccion02 {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: calc(100% - 60px);
+    color: black;
+}
+
+section.seccion03 {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    height: calc(100% - 60px);
+    color: white;
+    background-color: #0f0f0f;
+}
+
+footer {
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+    bottom: 0;
+}
+
+footer span {
+    font-family: 'Gochi Hand', 'sans-serif';
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    transition: all .5s ease;
+    text-shadow: 3px 3px 3px rgba(255, 59, 201, .7);
+}
+
+footer span:hover {
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.seccion02 footer span {
+    color: black;
+}
+
+@media screen and (max-width:800px) {
+    a.logo {
+        font-size: 3rem;
+    }
+    a.logo:hover {
+        font-size: 3.2rem;
+    }
+    a.scroll-logo {
+        font-size: 2.5rem;
+    }
+    a.scroll-logo:hover {
+        font-size: 2.7rem;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .seccion01 p {
+        font-size: 1.5rem;
+    }
+}
